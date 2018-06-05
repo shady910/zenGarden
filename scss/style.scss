@@ -1,0 +1,10 @@
+//
+// add a new import to this file if you add a new partial
+// be aware that ordering of these files does mater
+//
+// for example if you use variables in a file that is imported
+// before the variables file it will throw an error
+
+@import "partials/variables";
+@import "partials/mixins";
+@import "partials/zenGarden";
