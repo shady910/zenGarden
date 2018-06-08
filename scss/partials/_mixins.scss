@@ -2,3 +2,14 @@
 // Lets store mixins here that we will use
 // comonly in the project
 //
+
+@mixin bp($bp) {
+    @media screen and (min-width: $bp) {
+        @content;
+    }
+}
+
+// css background-image mixins
+@mixin css-img () {
+    
+}

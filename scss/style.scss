@@ -5,6 +5,7 @@
 // for example if you use variables in a file that is imported
 // before the variables file it will throw an error
 
+@import "partials/reset";
 @import "partials/variables";
 @import "partials/mixins";
 @import "partials/zenGarden";
