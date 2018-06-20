@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Karma|MedievalSharp");
 *,
 *:before,
 *:after {
@@ -12,8 +13,11 @@ body {
   padding: 0;
   margin: 0; }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: "MedievalSharp", cursive; }
+
 .intro {
-  background-color: #ebebeb;
+  background-color: #3a4678;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -25,7 +29,7 @@ body {
   .intro:after {
     content: '';
     width: 100%;
-    background-color: rgba(0, 255, 0, 0.5);
+    background-color: #f86b00;
     min-height: 200px; }
 
 header,
@@ -54,7 +58,7 @@ header {
           align-items: center; }
 
 .main {
-  background-color: rgba(0, 0, 255, 0.5);
+  background-color: #edebdf;
   grid-column: span 2; }
 
 .explanation:after {
@@ -86,7 +90,7 @@ p[role="contentinfo"]:before {
   min-height: 200px; }
 
 .sidebar {
-  background-color: rgba(255, 0, 0, 0.5);
+  background-color: red;
   grid-column: span 1;
   grid-row: span 2;
   grid-row-start: 1;
@@ -98,5 +102,21 @@ p[role="contentinfo"]:before {
     display: grid;
     grid-template-columns: 300px 2fr 300px;
     grid-auto-rows: minmax(50px, auto); } }
+
+.page-wrapper {
+  background-image: url("../../images/koi.jpg");
+  background-repeat: x-repeat;
+  background-size: 100%; }
+
+.sidebar {
+  background-color: rgba(255, 255, 255, 0.1);
+  position: relative; }
+
+sidebar:after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url("../../images/stone-wall-welsh-wall-stone-wales-161945.jpeg");
+  background-repeat: y-repeat; }
 
 /*# sourceMappingURL=maps/style.css.map */
