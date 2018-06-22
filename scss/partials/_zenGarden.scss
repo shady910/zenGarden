@@ -1,14 +1,15 @@
 .intro {
-	background-color: $color-2;
+	background-color: $color-3rgb;
 	display: flex;
 	flex-flow: column nowrap;
 	grid-column: span 2;
-	&:after {
-		content: '';
-		width: 100%;
-		background-color: $color-1;
-		min-height: 200px;
-	}
+	color: $color-2;
+	// &:after {
+	// 	content: '';
+	// 	width: 100%;
+	// 	background-color: $color-1rgb;
+	// 	min-height: 200px;
+	// }
 }
 
 header,
@@ -31,51 +32,51 @@ header {
 }
 
 .main {
-	background-color: $color-3;
+	background-color: $color-4rgb;
 	grid-column: span 2;
 }
 
 .explanation {
-	&:after {
-		content: '';
-		display: block;
-		width: 100%;
-		background-color: rgba(0,255,0,.5);
-		min-height: 200px;
-	}
+	// &:after {
+	// 	content: '';
+	// 	display: block;
+	// 	width: 100%;
+	// 	background-color: rgba(0,255,0,.2);
+	// 	min-height: 200px;
+	// }
 }
 .benefits {
-	&:after {
-		content: '';
-		display: block;
-		width: 100%;
-		background-color: rgba(0,255,0,.5);
-		min-height: 200px;
-	}
+	// &:after {
+	// 	content: '';
+	// 	display: block;
+	// 	width: 100%;
+	// 	background-color: rgba(0,255,0,.5);
+	// 	min-height: 200px;
+	// }
 }
 
 .participation {
-	&:after {
-		content: '';
-		display: block;
-		width: 100%;
-		background-color: rgba(0,255,0,.5);
-		min-height: 200px;
-	}
+	// &:after {
+	// 	content: '';
+	// 	display: block;
+	// 	width: 100%;
+	// 	background-color: rgba(0,255,0,.5);
+	// 	min-height: 200px;
+	// }
 }
 
 p[role="contentinfo"] {
-	&:before {
-		content: '';
-		display: block;
-		width: 100%;
-		background-color: rgba(0,255,0,.5);
-		min-height: 200px;
-	}
+	// &:before {
+	// 	content: '';
+	// 	display: block;
+	// 	width: 100%;
+	// 	background-color: rgba(0,255,0,.5);
+	// 	min-height: 200px;
+	// }
 }
 
 .sidebar {
-	background-color: rgb(255, 0, 0);
+	background-color: $color-5rgb;
 	grid-column: span 1;
 	grid-row: span 2;
 	grid-row-start: 1;
@@ -90,4 +91,23 @@ p[role="contentinfo"] {
 		grid-template-columns: 300px 2fr 300px;
 		grid-auto-rows: minmax(50px, auto);
 	}
+}
+
+a{
+	color: $color-1;
+	text-decoration: none;
+	font-size: 1.2em;
+ &:visited{
+	color: $color-4;
+} &:hover{
+	background-color: $color-1;
+	color: $color-5;
+} &:active{
+	color: $color-1;
+}
+}
+
+body{
+	color: $color-5;
+	font-size: 1.1em;
 }

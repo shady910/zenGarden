@@ -17,7 +17,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "MedievalSharp", cursive; }
 
 .intro {
-  background-color: #3a4678;
+  background-color: rgba(237, 235, 223, 0.9);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -25,12 +25,8 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
-  grid-column: span 2; }
-  .intro:after {
-    content: '';
-    width: 100%;
-    background-color: #f86b00;
-    min-height: 200px; }
+  grid-column: span 2;
+  color: #3a4678; }
 
 header,
 .explanation,
@@ -58,39 +54,11 @@ header {
           align-items: center; }
 
 .main {
-  background-color: #edebdf;
+  background-color: rgba(68, 109, 138, 0.9);
   grid-column: span 2; }
 
-.explanation:after {
-  content: '';
-  display: block;
-  width: 100%;
-  background-color: rgba(0, 255, 0, 0.5);
-  min-height: 200px; }
-
-.benefits:after {
-  content: '';
-  display: block;
-  width: 100%;
-  background-color: rgba(0, 255, 0, 0.5);
-  min-height: 200px; }
-
-.participation:after {
-  content: '';
-  display: block;
-  width: 100%;
-  background-color: rgba(0, 255, 0, 0.5);
-  min-height: 200px; }
-
-p[role="contentinfo"]:before {
-  content: '';
-  display: block;
-  width: 100%;
-  background-color: rgba(0, 255, 0, 0.5);
-  min-height: 200px; }
-
 .sidebar {
-  background-color: red;
+  background-color: rgba(236, 236, 236, 0.9);
   grid-column: span 1;
   grid-row: span 2;
   grid-row-start: 1;
@@ -102,6 +70,22 @@ p[role="contentinfo"]:before {
     display: grid;
     grid-template-columns: 300px 2fr 300px;
     grid-auto-rows: minmax(50px, auto); } }
+
+a {
+  color: #f86b00;
+  text-decoration: none;
+  font-size: 1.2em; }
+  a:visited {
+    color: #446d8a; }
+  a:hover {
+    background-color: #f86b00;
+    color: #ececec; }
+  a:active {
+    color: #f86b00; }
+
+body {
+  color: #ececec;
+  font-size: 1.1em; }
 
 .page-wrapper {
   background-image: url("../../images/koi.jpg");
