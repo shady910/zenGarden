@@ -4,12 +4,17 @@
 	flex-flow: column nowrap;
 	grid-column: span 2;
 	color: $color-2;
-	// &:after {
-	// 	content: '';
-	// 	width: 100%;
-	// 	background-color: $color-1rgb;
-	// 	min-height: 200px;
-	// }
+	&:after {
+		content: '';
+		display: block;
+		height: 200px;
+		width: 100px;
+		background-image: url('../../images/_ionicons_svg_md-ice-cream.svg');
+		background-repeat: no-repeat;
+
+		// animation
+		animation: spin 3s infinite;
+	}
 }
 
 header,
@@ -37,52 +42,95 @@ header {
 }
 
 .explanation {
-	// &:after {
-	// 	content: '';
-	// 	display: block;
-	// 	width: 100%;
-	// 	background-color: rgba(0,255,0,.2);
-	// 	min-height: 200px;
-	// }
+	&:after {
+		content: '';
+		display: block;
+		height: 200px;
+		width: 100px;
+		margin: 0 auto;
+		background-image: url('../../images/_ionicons_svg_md-ice-cream.svg');
+		background-repeat: no-repeat;
+
+		// animation
+		animation: spin 3s infinite;
+	}
 }
 .benefits {
-	// &:after {
-	// 	content: '';
-	// 	display: block;
-	// 	width: 100%;
-	// 	background-color: rgba(0,255,0,.5);
-	// 	min-height: 200px;
-	// }
+	&:after {
+		content: '';
+		display: block;
+		height: 200px;
+		width: 100px;
+		margin: 0 auto;
+		background-image: url('../../images/_ionicons_svg_md-ice-cream.svg');
+		background-repeat: no-repeat;
+
+		// animation
+		animation: spin 3s infinite;
+	}
 }
 
 .participation {
-	// &:after {
-	// 	content: '';
-	// 	display: block;
-	// 	width: 100%;
-	// 	background-color: rgba(0,255,0,.5);
-	// 	min-height: 200px;
-	// }
+	&:after {
+		content: '';
+		display: block;
+		height: 200px;
+		width: 100px;
+		margin: 0 auto;
+		background-image: url('../../images/_ionicons_svg_md-ice-cream.svg');
+		background-repeat: no-repeat;
+
+		// animation
+		animation: spin 3s infinite;
+	}
 }
 
 p[role="contentinfo"] {
-	// &:before {
-	// 	content: '';
-	// 	display: block;
-	// 	width: 100%;
-	// 	background-color: rgba(0,255,0,.5);
-	// 	min-height: 200px;
-	// }
+	&:before {
+		content: '';
+		display: block;
+		height: 200px;
+		width: 100px;
+		margin: 0 auto;
+		background-image: url('../../images/_ionicons_svg_md-ice-cream.svg');
+		background-repeat: no-repeat;
+
+		// animation
+		animation: spin 3s infinite;
+	}
 }
 
 .sidebar {
-	background-color: $color-5rgb;
+	background-color: $color-2rgb;
 	grid-column: span 1;
 	grid-row: span 2;
 	grid-row-start: 1;
 	grid-column-start: 1;
 	grid-row-end: 3;
+	&::after{
+		content: '';
+		display: block;
+		height: 200px;
+		width: 100px;
+		margin: 0 auto;
+		background-image: url('../../images/_ionicons_svg_md-ice-cream.svg');
+		background-repeat: no-repeat;
+
+		// animation
+		animation: spin 3s infinite;
+	}
+
 }
+@keyframes spin{
+	from {
+		transform: rotate(0deg);
+	  }
+	  to {
+		transform: rotate(360deg);
+	  }
+	}
+
+
 
 
 .page-wrapper {
