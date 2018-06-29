@@ -3,6 +3,7 @@
 	display: flex;
 	flex-flow: column nowrap;
 	grid-column: span 2;
+	padding: 1em 1em 1em 1em;
 	color: $color-2;
 	&:after {
 		content: '';
@@ -42,6 +43,7 @@ header {
 }
 
 .explanation {
+	padding: 1em 1em 1em 1em;
 	&:after {
 		content: '';
 		display: block;
@@ -56,6 +58,7 @@ header {
 	}
 }
 .benefits {
+	padding: 1em 1em 1em 1em;
 	&:after {
 		content: '';
 		display: block;
@@ -71,6 +74,7 @@ header {
 }
 
 .participation {
+	padding: 1em 1em 1em 1em;
 	&:after {
 		content: '';
 		display: block;
@@ -85,7 +89,12 @@ header {
 	}
 }
 
+.requirements{
+	padding: 1em 1em 1em 1em;
+}
+
 p[role="contentinfo"] {
+	padding: 1em 1em 1em 1em;
 	&:before {
 		content: '';
 		display: block;
@@ -101,6 +110,7 @@ p[role="contentinfo"] {
 }
 
 .sidebar {
+	padding: 1em 1em 1em 1em;
 	background-color: $color-2rgb;
 	grid-column: span 1;
 	grid-row: span 2;
