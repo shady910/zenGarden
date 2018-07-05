@@ -1,8 +1,15 @@
 
 
+
+.page-wrapper{
+    background-image: url("../../images/pond.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
 .sidebar{
    position: relative;
- 
 }
 
 sidebar:after{

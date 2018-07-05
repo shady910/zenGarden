@@ -18,22 +18,22 @@ h1, h2, h3, h4, h5, h6 {
 
 @-webkit-keyframes spin {
   from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg); }
-  to {
     -webkit-transform: rotate(360deg);
-            transform: rotate(360deg); } }
+            transform: rotate(360deg); }
+  to {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); } }
 
 @keyframes spin {
   from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg); }
-  to {
     -webkit-transform: rotate(360deg);
-            transform: rotate(360deg); } }
+            transform: rotate(360deg); }
+  to {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); } }
 
 .intro {
-  background-color: rgba(237, 235, 223, 0.9);
+  background-color: rgba(237, 235, 223, 0.6);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -80,7 +80,7 @@ header {
           align-items: center; }
 
 .main {
-  background-color: rgba(68, 109, 138, 0.9);
+  background-color: rgba(68, 109, 138, 0.6);
   grid-column: span 2; }
 
 .explanation {
@@ -157,14 +157,6 @@ p[role="contentinfo"] {
     -webkit-animation: spin 3s infinite;
             animation: spin 3s infinite; }
 
-@keyframes spin {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg); }
-  to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg); } }
-
 @media screen and (min-width: 65em) {
   .page-wrapper {
     display: grid;
@@ -186,6 +178,11 @@ a {
 body {
   color: #ececec;
   font-size: 1.1em; }
+
+.page-wrapper {
+  background-image: url("../../images/pond.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
 
 .sidebar {
   position: relative; }
