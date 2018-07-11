@@ -1,8 +1,45 @@
-@keyframes spin{
-	from {
-        transform: rotate(360deg);
-	  }
-	  to {
-		transform: rotate(0deg);
-	  }
-	}
+// @keyframes spin{
+// 	from {
+//         transform: rotate(360deg);
+// 	  }
+// 	  to {
+// 		transform: rotate(0deg);
+// 	  }
+// 	}
+
+
+// swimmedly swim
+@-webkit-keyframes swim
+{
+	0% {margin-left: 100%}
+	90% {margin-left: 100%;}
+	100% {margin-left: -235px;}
+}
+
+@keyframes swim
+{
+	0% {margin-left: 100px}
+	70% {margin-left: 100%;}
+	100% {margin-left: -235px;}
+}
+//bounce
+@keyframes bounce {
+  0%, 50%, 100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  25% {
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+  75% {
+    -moz-transform: translateY(-3px);
+    -ms-transform: translateY(-3px);
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
+  }
+}
