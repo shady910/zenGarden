@@ -12,10 +12,10 @@
 		width: 100px;
 		background-image: url('../../images/OrangeKoi.svg');
 		background-repeat: no-repeat;
-
+		transform: scaleX(-1);
 		// animation
-		animation: bounce 3s, swim 20s;
-	
+		animation: bounce 3s infinite, swim 7s infinite;
+
 	}
 }
 
@@ -53,9 +53,8 @@ header {
 		margin: 0 auto;
 		background-image: url('../../images/BlueKoi.svg');
 		background-repeat: no-repeat;
-
 		// animation
-		animation: spin 3s infinite;
+		animation: bounce 3s infinite, swim 7s infinite;
 	}
 }
 .benefits {
@@ -68,9 +67,8 @@ header {
 		margin: 0 auto;
 		background-image: url('../../images/OrangeKoi.svg');
 		background-repeat: no-repeat;
-
 		// animation
-		animation: spin 3s infinite;
+		animation: bounce 3s infinite, swim 3s infinite;
 	}
 }
 
@@ -84,9 +82,8 @@ header {
 		margin: 0 auto;
 		background-image: url('../../images/BlueKoi.svg');
 		background-repeat: no-repeat;
-
 		// animation
-		animation: spin 3s infinite;
+		animation: bounce 3s infinite, swim 5s infinite;
 	}
 }
 
@@ -104,9 +101,9 @@ p[role="contentinfo"] {
 		margin: 0 auto;
 		background-image: url('../../images/OrangeKoi.svg');
 		background-repeat: no-repeat;
-
+		
 		// animation
-		animation: spin 3s infinite;
+		animation: bounce 3s infinite, swim 9s infinite;
 	}
 }
 
@@ -127,9 +124,8 @@ p[role="contentinfo"] {
 		background-image: url('../../images/BlueKoi.svg');
 		
 		background-repeat: no-repeat;
-
 		// animation
-		animation: spin 3s infinite;
+		animation: bounce 3s infinite, swim 8s infinite;
 	}
 
 }

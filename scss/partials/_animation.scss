@@ -8,38 +8,31 @@
 // 	}
 
 
-// swimmedly swim
-@-webkit-keyframes swim
+@keyframes swim2
 {
-	0% {margin-left: 100%}
-	90% {margin-left: 100%;}
-	100% {margin-left: -235px;}
+	0% {margin-right: -235px; }
+	70% {margin-right: 100%;}
+	100% {margin-right: 100%;}
 }
 
-@keyframes swim
-{
-	0% {margin-left: 100px}
-	70% {margin-left: 100%;}
-	100% {margin-left: -235px;}
+@keyframes swim{
+0% {-webkit-transform: translate(200%, 10%) rotate(0deg)}
+20%{ -webkit-transform: translate(100%, -55%) rotate(40deg)}
+40%{ -webkit-transform: translate(0%, -125%) rotate(-20deg)}
+60%{ -webkit-transform: translate(-100%, -55%) rotate(-30deg)}
+80% {-webkit-transform: translate(-200%, 10%) rotate(-50deg)}
+100% {-webkit-transform: translate(-300%, 200%) rotate(-50deg)}
 }
-//bounce
+
+
 @keyframes bounce {
   0%, 50%, 100% {
-    -moz-transform: translateY(0);
-    -ms-transform: translateY(0);
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
+		transform: translateY(0);
   }
   25% {
-    -moz-transform: translateY(-5px);
-    -ms-transform: translateY(-5px);
-    -webkit-transform: translateY(-5px);
-    transform: translateY(-5px);
+    transform: translateY(-10px);
   }
   75% {
-    -moz-transform: translateY(-3px);
-    -ms-transform: translateY(-3px);
-    -webkit-transform: translateY(-3px);
-    transform: translateY(-3px);
+    transform: translateY(-8px);
   }
 }
