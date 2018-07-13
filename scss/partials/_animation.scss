@@ -17,12 +17,17 @@
 }
 
 @keyframes swim{
-0% {-webkit-transform: translate(200%, 10%) rotate(0deg)}
-20%{ -webkit-transform: translate(100%, -55%) rotate(40deg)}
-40%{ -webkit-transform: translate(0%, -25%) rotate(-20deg);}
-60%{ -webkit-transform: translate(-100%, -55%) rotate(-30deg)}
-80% {-webkit-transform: translate(-200%, 10%) rotate(-50deg)}
-100% {-webkit-transform: translate(-300%, 20%) rotate(-50deg) scaleX(-1)}
+  // left is side to side, 
+0% {-webkit-transform: translate(200%, -20%) rotate(0deg)}
+5%{ -webkit-transform: translate(100%, 12px) rotate(40deg)}
+15%{ -webkit-transform: translate(0%, 10px) rotate(-20deg);}
+30%{ -webkit-transform: translate(-100%, 7px) rotate(-30deg)}
+45% {-webkit-transform: translate(-200%, 3) rotate(-50deg)}
+50% {-webkit-transform: translate(-300%, 5%) rotate(-50deg) scaleX(-1)}
+65% {-webkit-transform: translate(-200%, 3) rotate(-50deg) scaleX(-1)}
+80% { -webkit-transform: translate(-100%, 7px) rotate(-30deg) scaleX(-1)}
+95% { -webkit-transform: translate(100%, 12px) rotate(40deg) scaleX(-1)}
+100% {-webkit-transform: translate(200%, -20%) rotate(0deg) scaleX(-1)}
 }
 
 

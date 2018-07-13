@@ -42,31 +42,47 @@ h1, h2, h3, h4, h5, h6 {
 
 @-webkit-keyframes swim {
   0% {
-    -webkit-transform: translate(200%, 10%) rotate(0deg); }
-  20% {
-    -webkit-transform: translate(100%, -55%) rotate(40deg); }
-  40% {
-    -webkit-transform: translate(0%, -25%) rotate(-20deg); }
-  60% {
-    -webkit-transform: translate(-100%, -55%) rotate(-30deg); }
+    -webkit-transform: translate(200%, -20%) rotate(0deg); }
+  5% {
+    -webkit-transform: translate(100%, 12px) rotate(40deg); }
+  15% {
+    -webkit-transform: translate(0%, 10px) rotate(-20deg); }
+  30% {
+    -webkit-transform: translate(-100%, 7px) rotate(-30deg); }
+  45% {
+    -webkit-transform: translate(-200%, 3) rotate(-50deg); }
+  50% {
+    -webkit-transform: translate(-300%, 5%) rotate(-50deg) scaleX(-1); }
+  65% {
+    -webkit-transform: translate(-200%, 3) rotate(-50deg) scaleX(-1); }
   80% {
-    -webkit-transform: translate(-200%, 10%) rotate(-50deg); }
+    -webkit-transform: translate(-100%, 7px) rotate(-30deg) scaleX(-1); }
+  95% {
+    -webkit-transform: translate(100%, 12px) rotate(40deg) scaleX(-1); }
   100% {
-    -webkit-transform: translate(-300%, 20%) rotate(-50deg) scaleX(-1); } }
+    -webkit-transform: translate(200%, -20%) rotate(0deg) scaleX(-1); } }
 
 @keyframes swim {
   0% {
-    -webkit-transform: translate(200%, 10%) rotate(0deg); }
-  20% {
-    -webkit-transform: translate(100%, -55%) rotate(40deg); }
-  40% {
-    -webkit-transform: translate(0%, -25%) rotate(-20deg); }
-  60% {
-    -webkit-transform: translate(-100%, -55%) rotate(-30deg); }
+    -webkit-transform: translate(200%, -20%) rotate(0deg); }
+  5% {
+    -webkit-transform: translate(100%, 12px) rotate(40deg); }
+  15% {
+    -webkit-transform: translate(0%, 10px) rotate(-20deg); }
+  30% {
+    -webkit-transform: translate(-100%, 7px) rotate(-30deg); }
+  45% {
+    -webkit-transform: translate(-200%, 3) rotate(-50deg); }
+  50% {
+    -webkit-transform: translate(-300%, 5%) rotate(-50deg) scaleX(-1); }
+  65% {
+    -webkit-transform: translate(-200%, 3) rotate(-50deg) scaleX(-1); }
   80% {
-    -webkit-transform: translate(-200%, 10%) rotate(-50deg); }
+    -webkit-transform: translate(-100%, 7px) rotate(-30deg) scaleX(-1); }
+  95% {
+    -webkit-transform: translate(100%, 12px) rotate(40deg) scaleX(-1); }
   100% {
-    -webkit-transform: translate(-300%, 20%) rotate(-50deg) scaleX(-1); } }
+    -webkit-transform: translate(200%, -20%) rotate(0deg) scaleX(-1); } }
 
 @-webkit-keyframes bounce {
   0%, 50%, 100% {
@@ -94,6 +110,10 @@ h1, h2, h3, h4, h5, h6 {
   list-style-type: none;
   text-decoration: none; }
 
+body {
+  font-family: "Karma", cursive;
+  font-size: 1.1em; }
+
 .intro {
   background-color: rgba(237, 235, 223, 0.6);
   display: -webkit-box;
@@ -117,6 +137,9 @@ h1, h2, h3, h4, h5, h6 {
             transform: scaleX(-1);
     -webkit-animation: bounce 3s infinite, swim 7s infinite;
             animation: bounce 3s infinite, swim 7s infinite; }
+
+.intro[role=banner] {
+  color: red; }
 
 header,
 .explanation,
@@ -155,6 +178,7 @@ header {
     height: 200px;
     width: 100px;
     margin: 0 auto;
+    padding: 1em;
     background-image: url("../../images/BlueKoi.svg");
     background-repeat: no-repeat;
     -webkit-animation: bounce 3s infinite, swim 7s infinite;
@@ -210,16 +234,6 @@ p[role="contentinfo"] {
   grid-row-start: 1;
   grid-column-start: 1;
   grid-row-end: 3; }
-  .sidebar::after {
-    content: '';
-    display: block;
-    height: 200px;
-    width: 100px;
-    margin: 0 auto;
-    background-image: url("../../images/BlueKoi.svg");
-    background-repeat: no-repeat;
-    -webkit-animation: bounce 3s infinite, swim 8s infinite;
-            animation: bounce 3s infinite, swim 8s infinite; }
 
 @media screen and (min-width: 65em) {
   .page-wrapper {
