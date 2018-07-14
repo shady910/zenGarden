@@ -24,15 +24,29 @@ body{
 		width: 100px;
 		background-image: url('../../images/OrangeKoi.svg');
 		background-repeat: no-repeat;
-		transform: scaleX(-1);
+		animation: smallswim 7s infinite; 	
 		// animation
-		animation: bounce 3s infinite, swim 7s infinite;
+		
+		@media screen and (min-width: $bp-desktop){
+			animation: bounce 3s infinite, swim 7s infinite;	
+	}
+	}
+}
+
+
+
+#zen-intro h1{
+	
+	font-size: 2.1em;
+	width: 150px;
+	margin-right: 215px;
+	@media screen and (min-width: $bp-desktop){
 
 	}
 }
 
-.intro[role=banner]{
-	color: red;
+#zen-intro h2{
+	color: $color-1;
 }
 
 header,
@@ -67,11 +81,16 @@ header {
 		height: 200px;
 		width: 100px;
 		margin: 0 auto;
+		
 		padding: 1em;
 		background-image: url('../../images/BlueKoi.svg');
 		background-repeat: no-repeat;
+		animation: smallswim 7s infinite; 	
 		// animation
-		animation: bounce 3s infinite, swim 7s infinite;
+		
+		@media screen and (min-width: $bp-desktop){
+			animation: bounce 3s infinite, swim 7s infinite;	
+	}
 	}
 }
 .benefits {
@@ -84,8 +103,12 @@ header {
 		margin: 0 auto;
 		background-image: url('../../images/OrangeKoi.svg');
 		background-repeat: no-repeat;
+		animation: smallswim 7s infinite; 	
 		// animation
-		animation: bounce 3s infinite, swim 3s infinite;
+		
+		@media screen and (min-width: $bp-desktop){
+			animation: bounce 3s infinite, swim 7s infinite;	
+	}
 	}
 }
 
@@ -99,8 +122,12 @@ header {
 		margin: 0 auto;
 		background-image: url('../../images/BlueKoi.svg');
 		background-repeat: no-repeat;
+		animation: smallswim 7s infinite; 	
 		// animation
-		animation: bounce 3s infinite, swim 5s infinite;
+		
+		@media screen and (min-width: $bp-desktop){
+			animation: bounce 3s infinite, swim 7s infinite;	
+	}
 	}
 }
 
@@ -118,9 +145,11 @@ p[role="contentinfo"] {
 		margin: 0 auto;
 		background-image: url('../../images/OrangeKoi.svg');
 		background-repeat: no-repeat;
-		
+		animation: smallswim 3s infinite; 	
 		// animation
-		animation: bounce 3s infinite, swim 9s infinite;
+		@media screen and (min-width: $bp-desktop){
+			animation: bounce 3s infinite, swim 7s infinite;	
+	}
 	}
 }
 
@@ -141,26 +170,8 @@ p[role="contentinfo"] {
 		display: grid;
 		grid-template-columns: 300px 2fr 300px;
 		grid-auto-rows: minmax(50px, auto);
+		
+		
 	}
 }
 
-a{
-	color: $color-1;
-	text-decoration: none;
-	font-size: 1.2em;
- &:visited{
-	color: $color-4;
-} &:hover{
-	background-color: $color-1;
-	color: $color-5;
-	transition: all .2s ease-in-out; 
-	font-size: 1.7em;
-} &:active{
-	color: $color-1;
-}
-}
-
-body{
-	color: $color-5;
-	font-size: 1.1em;
-}

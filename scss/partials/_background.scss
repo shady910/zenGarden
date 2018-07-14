@@ -2,9 +2,16 @@
 
 
 .page-wrapper{
-   // background-image: url("../../images/pond.jpg");
-   // background-size: cover;
-    background-repeat: no-repeat;
+   background-image: none;
+    @media screen and (min-width: $bp-desktop){
+        background-image: url(../../images/scales-huge.svg);
+        opacity: 30%;
+        background-repeat: repeat-y;
+        background-size: cover;
+        background-position:left;
+        height: 100%;
+        width: 100%;
+    }
 }
 
 

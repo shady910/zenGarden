@@ -8,13 +8,6 @@
 // 	}
 
 
-@keyframes swim2
-{
-  0% {margin-right: -235px; }
-  25% {margin-right: -135px; transform: scaleX(-1) scaleX(1);}
-	70% {margin-right: 100%;}
-	100% {margin-right: 100%;}
-}
 
 @keyframes swim{
   // left is side to side, 
@@ -29,6 +22,22 @@
 95% { -webkit-transform: translate(100%, 12px) rotate(40deg) scaleX(-1)}
 100% {-webkit-transform: translate(200%, -20%) rotate(0deg) scaleX(-1)}
 }
+
+@keyframes smallswim{
+  // left is side to side, 
+0% {-webkit-transform: translate(95%, -20%) rotate(0deg)}
+5%{ -webkit-transform: translate(100%, 12px) rotate(40deg)}
+15%{ -webkit-transform: translate(0%, 10px) rotate(-20deg);}
+30%{ -webkit-transform: translate(-55%, 7px) rotate(-30deg)}
+45% {-webkit-transform: translate(-75%, 3) rotate(-50deg)}
+50% {-webkit-transform: translate(-55%, 5%) rotate(-50deg) scaleX(-1)}
+65% {-webkit-transform: translate(-75%, 3) rotate(-50deg) scaleX(-1)}
+80% { -webkit-transform: translate(-55%, 7px) rotate(-30deg) scaleX(-1)}
+95% { -webkit-transform: translate(0%, 12px) rotate(40deg) scaleX(-1)}
+100% {-webkit-transform: translate(95%, -20%) rotate(0deg) scaleX(-1)}
+}
+
+// make the fishes bounce at small screen??
 
 
 @keyframes bounce {
