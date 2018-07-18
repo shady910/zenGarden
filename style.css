@@ -311,6 +311,20 @@ p[role="contentinfo"] {
   grid-row-start: 1;
   grid-column-start: 1;
   grid-row-end: 3; }
+  .sidebar:after {
+    content: '';
+    display: block;
+    height: 200px;
+    width: 100px;
+    margin: 0 auto;
+    background-image: url("../../images/BlueKoi.svg");
+    background-repeat: no-repeat;
+    -webkit-animation: bounce 3s infinite;
+            animation: bounce 3s infinite; }
+    @media screen and (min-width: 65em) {
+      .sidebar:after {
+        -webkit-animation: bounce 3s infinite;
+                animation: bounce 3s infinite; } }
 
 @media screen and (min-width: 65em) {
   .page-wrapper {

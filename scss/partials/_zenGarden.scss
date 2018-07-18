@@ -189,7 +189,20 @@ p[role="contentinfo"] {
 	grid-row-start: 1;
 	grid-column-start: 1;
 	grid-row-end: 3;
-
+	&:after {
+		content: '';
+		display: block;
+		height: 200px;
+		width: 100px;
+		margin: 0 auto;
+		background-image: url('../../images/BlueKoi.svg');
+		background-repeat: no-repeat;
+		animation: bounce 3s infinite; 	
+		// animation
+		@media screen and (min-width: $bp-desktop){
+			animation: bounce 3s infinite;	
+	}
+	}
 
 }
 
