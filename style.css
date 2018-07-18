@@ -280,7 +280,7 @@ p[role="contentinfo"] {
     height: 200px;
     width: 100px;
     margin: 0 auto;
-    background-image: url("../../images/OrangeKoi.svg");
+    background-image: url("../../images/BlueKoi.svg");
     background-repeat: no-repeat;
     -webkit-animation: smallswim 6s infinite;
             animation: smallswim 6s infinite; }
