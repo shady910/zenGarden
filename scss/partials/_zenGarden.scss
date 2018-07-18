@@ -11,12 +11,12 @@ body{
 
 
 .intro {
-	background-color: $color-3rgb;
+	background: linear-gradient(to right, $color-4rgb, $color-3rgb);;
 	display: flex;
 	flex-flow: column nowrap;
 	grid-column: span 2;
 	padding: 1em 1em 1em 1em;
-	color: $color-2;
+	color:$color-6;
 	&:after {
 		content: '';
 		display: block;
@@ -26,9 +26,22 @@ body{
 		background-repeat: no-repeat;
 		animation: smallswim 7s infinite; 	
 		// animation
+		@media screen and (min-width: $bp-desktop){
+			animation: bounce 3s infinite, swim 6s infinite;	
+	}
+	}
+	&:before {
+		content: '';
+		display: block;
+		height: 200px;
+		width: 100px;
+		background-image: url('../../images/OrangeKoi.svg');
+		background-repeat: no-repeat;
+		animation: smallswim 2s infinite; 	
+		// animation
 		
 		@media screen and (min-width: $bp-desktop){
-			animation: bounce 3s infinite, swim 7s infinite;	
+			animation: bounce 3s infinite, swim 4s infinite;	
 	}
 	}
 }
@@ -36,12 +49,12 @@ body{
 
 
 #zen-intro h1{
-	
+	color: $color-2;
 	font-size: 2.1em;
 	width: 150px;
 	margin-right: 215px;
 	@media screen and (min-width: $bp-desktop){
-
+		width: 200px;
 	}
 }
 
@@ -69,8 +82,9 @@ header {
 }
 
 .main {
-	background-color: $color-4rgb;
+	background: linear-gradient(to bottom left, $color-3rgb, $color-4rgb, $color-2rgb);
 	grid-column: span 2;
+	color:$color-6;
 }
 
 .explanation {
@@ -81,15 +95,15 @@ header {
 		height: 200px;
 		width: 100px;
 		margin: 0 auto;
-		
+
 		padding: 1em;
 		background-image: url('../../images/BlueKoi.svg');
 		background-repeat: no-repeat;
-		animation: smallswim 7s infinite; 	
+		animation: smallswim 5s infinite; 	
 		// animation
 		
 		@media screen and (min-width: $bp-desktop){
-			animation: bounce 3s infinite, swim 7s infinite;	
+			animation: bounce 3s infinite, swim 8s infinite;	
 	}
 	}
 }
@@ -103,11 +117,11 @@ header {
 		margin: 0 auto;
 		background-image: url('../../images/OrangeKoi.svg');
 		background-repeat: no-repeat;
-		animation: smallswim 7s infinite; 	
+		animation: smallswim 5s infinite; 	
 		// animation
 		
 		@media screen and (min-width: $bp-desktop){
-			animation: bounce 3s infinite, swim 7s infinite;	
+			animation: bounce 3s infinite, swim 5s infinite;	
 	}
 	}
 }
@@ -122,11 +136,11 @@ header {
 		margin: 0 auto;
 		background-image: url('../../images/BlueKoi.svg');
 		background-repeat: no-repeat;
-		animation: smallswim 7s infinite; 	
+		animation: smallswim 3s infinite; 	
 		// animation
 		
 		@media screen and (min-width: $bp-desktop){
-			animation: bounce 3s infinite, swim 7s infinite;	
+			animation: bounce 3s infinite, swim 4s infinite;	
 	}
 	}
 }
@@ -145,10 +159,24 @@ p[role="contentinfo"] {
 		margin: 0 auto;
 		background-image: url('../../images/OrangeKoi.svg');
 		background-repeat: no-repeat;
+		animation: smallswim 6s infinite; 	
+		// animation
+		@media screen and (min-width: $bp-desktop){
+			animation: bounce 3s infinite, swim 3s infinite;	
+	}
+	}
+	&:after {
+		content: '';
+		display: block;
+		height: 200px;
+		width: 100px;
+		margin: 0 auto;
+		background-image: url('../../images/OrangeKoi.svg');
+		background-repeat: no-repeat;
 		animation: smallswim 3s infinite; 	
 		// animation
 		@media screen and (min-width: $bp-desktop){
-			animation: bounce 3s infinite, swim 7s infinite;	
+			animation: bounce 3s infinite, swim 2s infinite;	
 	}
 	}
 }

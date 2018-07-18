@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Karma|MedievalSharp");
+@import url("https://fonts.googleapis.com/css?family=Roboto|MedievalSharp");
 *,
 *:before,
 *:after {
@@ -131,11 +131,12 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none; }
 
 body {
-  font-family: "Karma", cursive;
+  font-family: "Roboto", cursive;
   font-size: 1.1em; }
 
 .intro {
-  background-color: rgba(237, 235, 223, 0.6);
+  background: -webkit-gradient(linear, left top, right top, from(rgba(68, 109, 138, 0.6)), to(rgba(237, 235, 223, 0.6)));
+  background: linear-gradient(to right, rgba(68, 109, 138, 0.6), rgba(237, 235, 223, 0.6));
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -145,7 +146,7 @@ body {
           flex-flow: column nowrap;
   grid-column: span 2;
   padding: 1em 1em 1em 1em;
-  color: #3a4678; }
+  color: black; }
   .intro:after {
     content: '';
     display: block;
@@ -157,13 +158,30 @@ body {
             animation: smallswim 7s infinite; }
     @media screen and (min-width: 65em) {
       .intro:after {
-        -webkit-animation: bounce 3s infinite, swim 7s infinite;
-                animation: bounce 3s infinite, swim 7s infinite; } }
+        -webkit-animation: bounce 3s infinite, swim 6s infinite;
+                animation: bounce 3s infinite, swim 6s infinite; } }
+  .intro:before {
+    content: '';
+    display: block;
+    height: 200px;
+    width: 100px;
+    background-image: url("../../images/OrangeKoi.svg");
+    background-repeat: no-repeat;
+    -webkit-animation: smallswim 2s infinite;
+            animation: smallswim 2s infinite; }
+    @media screen and (min-width: 65em) {
+      .intro:before {
+        -webkit-animation: bounce 3s infinite, swim 4s infinite;
+                animation: bounce 3s infinite, swim 4s infinite; } }
 
 #zen-intro h1 {
+  color: #3a4678;
   font-size: 2.1em;
   width: 150px;
   margin-right: 215px; }
+  @media screen and (min-width: 65em) {
+    #zen-intro h1 {
+      width: 200px; } }
 
 #zen-intro h2 {
   color: #f86b00; }
@@ -194,8 +212,10 @@ header {
           align-items: center; }
 
 .main {
-  background-color: rgba(68, 109, 138, 0.6);
-  grid-column: span 2; }
+  background: -webkit-gradient(linear, right top, left bottom, from(rgba(237, 235, 223, 0.6)), color-stop(rgba(68, 109, 138, 0.6)), to(rgba(58, 70, 120, 0.9)));
+  background: linear-gradient(to bottom left, rgba(237, 235, 223, 0.6), rgba(68, 109, 138, 0.6), rgba(58, 70, 120, 0.9));
+  grid-column: span 2;
+  color: black; }
 
 .explanation {
   padding: 1em 1em 1em 1em; }
@@ -208,12 +228,12 @@ header {
     padding: 1em;
     background-image: url("../../images/BlueKoi.svg");
     background-repeat: no-repeat;
-    -webkit-animation: smallswim 7s infinite;
-            animation: smallswim 7s infinite; }
+    -webkit-animation: smallswim 5s infinite;
+            animation: smallswim 5s infinite; }
     @media screen and (min-width: 65em) {
       .explanation:after {
-        -webkit-animation: bounce 3s infinite, swim 7s infinite;
-                animation: bounce 3s infinite, swim 7s infinite; } }
+        -webkit-animation: bounce 3s infinite, swim 8s infinite;
+                animation: bounce 3s infinite, swim 8s infinite; } }
 
 .benefits {
   padding: 1em 1em 1em 1em; }
@@ -225,12 +245,12 @@ header {
     margin: 0 auto;
     background-image: url("../../images/OrangeKoi.svg");
     background-repeat: no-repeat;
-    -webkit-animation: smallswim 7s infinite;
-            animation: smallswim 7s infinite; }
+    -webkit-animation: smallswim 5s infinite;
+            animation: smallswim 5s infinite; }
     @media screen and (min-width: 65em) {
       .benefits:after {
-        -webkit-animation: bounce 3s infinite, swim 7s infinite;
-                animation: bounce 3s infinite, swim 7s infinite; } }
+        -webkit-animation: bounce 3s infinite, swim 5s infinite;
+                animation: bounce 3s infinite, swim 5s infinite; } }
 
 .participation {
   padding: 1em 1em 1em 1em; }
@@ -242,12 +262,12 @@ header {
     margin: 0 auto;
     background-image: url("../../images/BlueKoi.svg");
     background-repeat: no-repeat;
-    -webkit-animation: smallswim 7s infinite;
-            animation: smallswim 7s infinite; }
+    -webkit-animation: smallswim 3s infinite;
+            animation: smallswim 3s infinite; }
     @media screen and (min-width: 65em) {
       .participation:after {
-        -webkit-animation: bounce 3s infinite, swim 7s infinite;
-                animation: bounce 3s infinite, swim 7s infinite; } }
+        -webkit-animation: bounce 3s infinite, swim 4s infinite;
+                animation: bounce 3s infinite, swim 4s infinite; } }
 
 .requirements {
   padding: 1em 1em 1em 1em; }
@@ -262,12 +282,26 @@ p[role="contentinfo"] {
     margin: 0 auto;
     background-image: url("../../images/OrangeKoi.svg");
     background-repeat: no-repeat;
+    -webkit-animation: smallswim 6s infinite;
+            animation: smallswim 6s infinite; }
+    @media screen and (min-width: 65em) {
+      p[role="contentinfo"]:before {
+        -webkit-animation: bounce 3s infinite, swim 3s infinite;
+                animation: bounce 3s infinite, swim 3s infinite; } }
+  p[role="contentinfo"]:after {
+    content: '';
+    display: block;
+    height: 200px;
+    width: 100px;
+    margin: 0 auto;
+    background-image: url("../../images/OrangeKoi.svg");
+    background-repeat: no-repeat;
     -webkit-animation: smallswim 3s infinite;
             animation: smallswim 3s infinite; }
     @media screen and (min-width: 65em) {
-      p[role="contentinfo"]:before {
-        -webkit-animation: bounce 3s infinite, swim 7s infinite;
-                animation: bounce 3s infinite, swim 7s infinite; } }
+      p[role="contentinfo"]:after {
+        -webkit-animation: bounce 3s infinite, swim 2s infinite;
+                animation: bounce 3s infinite, swim 2s infinite; } }
 
 .sidebar {
   padding: 1em 1em 1em 1em;
@@ -284,18 +318,6 @@ p[role="contentinfo"] {
     grid-template-columns: 300px 2fr 300px;
     grid-auto-rows: minmax(50px, auto); } }
 
-.page-wrapper {
-  background-image: none; }
-  @media screen and (min-width: 65em) {
-    .page-wrapper {
-      background-image: url(../../images/scales-huge.svg);
-      opacity: 30%;
-      background-repeat: repeat-y;
-      background-size: cover;
-      background-position: left;
-      height: 100%;
-      width: 100%; } }
-
 .sidebar {
   position: relative; }
 
@@ -303,6 +325,17 @@ sidebar:after {
   content: "";
   display: block;
   position: absolute; }
+
+html {
+  background-image: none; }
+  @media screen and (min-width: 65em) {
+    html {
+      background-image: url(images/scales.svg);
+      background-repeat: repeat; } }
+
+body {
+  color: #ececec;
+  font-size: 1.2em; }
 
 a {
   color: #f86b00;
@@ -318,9 +351,5 @@ a {
     font-size: 1.7em; }
   a:active {
     color: #f86b00; }
-
-body {
-  color: #ececec;
-  font-size: 1.1em; }
 
 /*# sourceMappingURL=maps/style.css.map */

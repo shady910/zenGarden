@@ -13,6 +13,20 @@
 @import "partials/zenGarden";
 @import "partials/background";
 
+html {
+	background-image: none;
+	     @media screen and (min-width: $bp-desktop){
+	background-image: url(images/scales.svg);
+	background-repeat: repeat;
+  }
+}
+
+body{
+	color: $color-5;
+	font-size: 1.2em;
+
+}
+
 a{
 	color: $color-1;
 	text-decoration: none;
@@ -27,9 +41,4 @@ a{
 } &:active{
 	color: $color-1;
 }
-}
-
-body{
-	color: $color-5;
-	font-size: 1.1em;
 }
